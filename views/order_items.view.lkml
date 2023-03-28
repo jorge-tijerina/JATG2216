@@ -29,6 +29,7 @@ view: order_items {
     sql: ${TABLE}.order_id ;;
   }
 
+
   dimension: phone {
     type: string
     sql: ${TABLE}.phone ;;
@@ -69,6 +70,7 @@ view: order_items {
     type: sum
     sql: ${sale_price} ;;
   }
+
 
   measure: average_sale_price {
     type: average
